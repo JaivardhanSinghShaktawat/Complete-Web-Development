@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms And Inputs Elements</title>
+  </head>
+  <body>
+    <form method="post">
+      UserName :<input type="text" /> <br /><br />
+      Phone: <input type="number" name="" id="" /><br /><br />
+      Telephone: <input type="tel" name="" id="" /><br /><br />
+      Email: <input type="email" name="" id="" /><br /><br />
+      Password: <input type="password" name="" id="" /><br /><br />
+      Url: <input type="url" name="" id="" /><br /><br />
+      Color: <input type="color" name="" id="" /><br /><br />
+      Date: <input type="date" name="" id="" /><br /><br />
+      Time: <input type="time" name="" id="" /><br /><br />
+      Month: <input type="month" name="" id="" /><br /><br />
+      Week: <input type="week" name="" id="" /><br /><br />
+      File:
+      <input
+        type="file"
+        multiple
+        accept="images/* , zip , rar"
+        name=""
+        id=""
+      /><br /><br />
+      Checkbox: <input type="checkbox" name="" id="" /><br /><br />
+      Radio: <input type="radio" name="" id="" /><br /><br />
+      Search :
+      <input type="search" name="searchbar" id="searchbar" /><br /><br />
+      Range :
+      <input type="range" name="range" id="range" value="2" min="2" max="100" />
+
+      <label for="progress">Loading...</label>
+      <progress id="progress" value="40" min="0" max="100" step="5"></progress
+      ><br /><br />
+
+      <label for="battery">Battery Percentage</label>
+      <meter
+        id="battery"
+        value="50"
+        min="0"
+        max="100"
+        low="20"
+        high="80"
+      ></meter
+      ><br /><br />
+
+      <label for="cars">Cars</label>
+      <select name="cars" id="cars">
+        <optgroup label="Audi">
+          <option value="A4">A4</option>
+          <option value="A8">A8</option>
+        </optgroup>
+        <option value="bmw">bmw</option>
+        <option value="maruti">maruti</option></select
+      ><br /><br />
+
+      <label for="Fruits">Fruites</label>
+      <input type="text" list="data-list" name="" id="" /><br /><br />
+      <datalist id="data-list">
+        <option value="Apple">Apple</option>
+        <option value="Mango">Mango</option>
+        <option value="Oranges">Oranges</option>
+        <option value="Pineapple">Pineapple</option>
+      </datalist>
+      <br /><br />
+      <label for="message">Message:</label><br /><br />
+      <textarea
+        name="message"
+        id="message"
+        rows="20"
+        cols="40"
+        placeholder="Message..."
+      ></textarea>
+      <br /><br />
+
+      <label for="user-input">User Input</label>
+      <!-- Using Output -->
+      <input type="number" value="5" name="a" id="b" />
+      <input type="range" value="10" name="a" id="b" />
+
+      <output id="user-input" for="a b" name="calc"></output>
+      <br /><br />
+
+      <search class="search-bar">
+        <label for="search-bar">Search</label>
+        <input type="search" name="search-bar" id="" />
+      </search>
+      <br /><br />
+      <button type="submit" onsubmit="calc.value = a.value + b.value">
+        Submit
+      </button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
